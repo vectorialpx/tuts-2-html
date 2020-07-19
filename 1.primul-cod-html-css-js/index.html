@@ -1,0 +1,27 @@
+<style>
+    .cube {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 10px;
+        transition: background 0.7s, transform 0.7s
+    }
+</style>
+<div id="continut"></div>
+<script>
+    var container = document.getElementById('continut');
+    var noOfCubes = 300;
+    var speed     = 1500;
+    for (var i = 1; i <= noOfCubes; i++) {
+        container.innerHTML += '<div class="cube" style="background:rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')"></div>';
+    }
+    setInterval(function () {
+        var elements = document.getElementsByClassName('cube');
+        for (var el in elements) {
+            if (el % Math.floor(Math.random() * 5) === 0) {
+                elements[el].style.backgroundColor = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')';
+            }
+            elements[el].style.transform = 'scale(' + (scale = (0.9 + Math.random() * 0.5)) + ', ' + scale + ')';
+        }
+    }, speed);
+</script>
