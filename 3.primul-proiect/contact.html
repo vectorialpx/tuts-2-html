@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Primul proiect</title>
+</head>
+<body>
+<header>
+    <figure>
+        <img src="images/avatar-200.jpg" alt="Avatar" width="100" height="100">
+        <figcaption>Octavian I</figcaption>
+    </figure>
+
+    <h1>Pagina de prezentare</h1>
+    <h2>Contact</h2>
+
+    <nav>
+        <a href="index.html">Home</a> .
+        <a href="despre-mine.html">Despre mine</a> .
+        <a href="contact.html"><strong>Contact</strong></a>
+    </nav>
+
+</header>
+
+<main>
+    <section>
+        <h1>Contact</h1>
+        <p>Contactati-ma folosind formularul de mai jos</p>
+
+        <form action="index.html" method="post">
+            <section>
+                <p>
+                    <label for="contact_nume">Nume:</label>
+                    <input type="text" id="contact_nume" name="nume" placeholder="Numele tau">
+                </p>
+                <p>
+                    <label for="contact_varsta">Varsta:</label>
+                    <select name="varsta" id="contact_varsta">
+                        <optgroup label="Baby">
+                            <option value="0-15">0 - 15</option>
+                        </optgroup>
+                        <optgroup label="Forta de munca">
+                            <option value="16-25">16 - 25</option>
+                            <option value="26-45">26 - 45</option>
+                            <option value="46-65">46 - 65</option>
+                        </optgroup>
+                        <optgroup label="Pensionati">
+                            <option value="66+">66+</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    Sex<br>
+                    <label>
+                        <input type="radio" name="sex" value="m">
+                        Masculin
+                    </label><br>
+                    <label>
+                        <input type="radio" name="sex" value="f">
+                        Feminin
+                    </label>
+                </p>
+            </section>
+            <section>
+                <p>
+                    Pasiuni<br>
+                    <label>
+                        <input type="checkbox" name="sex[]" value="calatorii">
+                        Calatorii
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="sex[]" value="condus">
+                        Condus
+                    </label>
+                </p>
+                <p>
+                    <label for="contact_mesaj">
+                        Mesaj<br>
+                        <textarea name="name" id="contact_mesaj" rows="8" cols="80" placeholder="Mesajul tau"></textarea>
+                    </label>
+                </p>
+            </section>
+            <section>
+                <p>
+                    <button type="submit" name="button">Trimite</button>
+                </p>
+            </section>
+        </form>
+
+    </section>
+</main>
+<footer>
+    <p>Copyright &copy; 2020</p>
+</footer>
+</body>
+</html>
