@@ -1,0 +1,6 @@
+p.paragraf { padding-left:30px }
+p.verde { color: green !important }
+p.mare {
+    font-size: 30px;
+    color: cyan;
+}

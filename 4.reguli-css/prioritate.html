@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Prioritatea in CSS</title>
+        <style>
+            /* cel mai important - dar cel mai nerecomandat */
+            p.p-gri-important { color: gainsboro !important }
+
+            /* path specific cu tag-uri si clase */
+            p.p-albastru span.spanulmeu { color:darkgreen }
+            p.p-albastru span { color: rebeccapurple }
+            
+            /* path cat mai specific */
+            p span strong { color:darkcyan }
+            p span { color: greenyellow }
+            
+            /* tag cu ID */
+            p#paragraful { color: green }
+
+            /* tag cu clasa */
+            p.p-albastru { color: blue }
+
+            /* class */
+            .p-albastru { color: cadetblue }
+
+            /* tag */
+            p { color: red }
+        </style>
+    </head>
+    <body>
+        <p>Toate parargafele sunt scrise cu rosu</p>
+        <p>Toate parargafele sunt scrise cu rosu</p>
+        <div class="p-albastru">Cele cu clasa sunt albastre</div>
+        <p class="p-albastru">Cele cu clasa sunt albastre</p>
+        <p class="p-albastru">Cele cu clasa sunt albastre</p>
+        <p class="p-albastru" style="color:hotpink">Avem stil inline</p>
+        <p class="p-albastru" style="color:hotpink">Avem stil inline</p>
+        <p class="p-albastru p-gri-important p-maro-important" style="color:hotpink">Avem stil inline</p>
+        <p class="p-albastru p-gri-important p-maro-important" style="color:hotpink">Avem stil inline</p>
+        <p id="paragraful" class="p-albastru">Dar asta e special</p>
+        <p class="p-albastru">Aici avem un <span>sub-element - <strong>sau copil</strong></span></p>
+        <p class="p-albastru">Aici avem un <span class="spanulmeu">sub-element - <strong>sau copil</strong></span></p>
+    </body>
+</html>

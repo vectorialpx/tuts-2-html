@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,UAAW;EAAE,IAAI,ECFH,+BAA6B",
+"sources": ["../resources/good.scss","../resources/_variables.scss"],
+"names": [],
+"file": "good.css"
+}

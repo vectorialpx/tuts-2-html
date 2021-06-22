@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Reguli de scriere in CSS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        p { color:blue }
+        p span { color:fuchsia }
+    </style>
+</head>
+<body>
+    <!-- Tag-uri -->
+    <p style="color:red">Salutare!</p>
+
+    <!-- Clase -->
+    <p class="paragraf verde mare">Salutare!</p>
+
+    <!-- IDuri -->
+    <p class="paragraf verde" id="paragraful">Salutare!</p>
+
+    <!-- Children -->
+    <p>Salutare <span>sau salut</span>!</p>
+
+    <script>
+        document.getElementById('paragraful').style.color = 'pink';
+    </script>
+</body>
+</html>
